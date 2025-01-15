@@ -1,0 +1,19 @@
+<suite name="Groups">
+    <listeners>
+        <listener class-name="com.sevenrmartsupermarket.listeners.ExtentReporter" />
+    </listeners>
+
+    <test name="smoke">
+        <groups>
+            <run>
+                <!-- Include the 'UI Test' group -->
+                <include name="UI Test" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.sevenrmartsupermarket.tests.LoginTest" />
+            <class name="com.sevenrmartsupermarket.tests.DashBoardTest" />
+            <class name="com.sevenrmartsupermarket.tests.ManageNewsTest" />
+        </classes>
+    </test>
+</suite>
