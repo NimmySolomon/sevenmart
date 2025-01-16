@@ -1,8 +1,8 @@
 <suite name="Cross Browser" thread-count="3" parallel="tests">
 	<listeners>
-		<listerner
+		<listener
 			class-name="com.sevenrmartsupermarket.listeners.ExtentReporter">
-		</listerner>
+		</listener>
 	</listeners>
 	<test name="Run in Chrome">
 		<parameter name="browser" value="Chrome">
