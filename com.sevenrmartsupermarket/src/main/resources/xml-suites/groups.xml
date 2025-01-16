@@ -1,13 +1,11 @@
 <suite name="Groups">
     <listeners>
         <listener class-name="com.sevenrmartsupermarket.listeners.ExtentReporter" />
-    </listeners>
-
-    <test name="smoke">
+    </listeners>   
+    <test name="Group Test">
         <groups>
             <run>
-                <!-- Include the 'UI Test' group -->
-                <include name="UI Test" />
+                <include name="smoke" />
             </run>
         </groups>
         <classes>

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Groups" class="navigator-link">
-              <span class="suite-name border-passed">Groups</span>
+              <span class="suite-name border-failed">Groups</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Groups" class="navigator-link ">
-                    <span>C:\Users\nimmy\eclipse-workspace\com.sevenrmartsupermarket\src\main\resources\xml-suites\groups</span>
+                    <span>C:\Users\nimmy\git\sevenmart\com.sevenrmartsupermarket\src\main\resources\xml-suites\groups.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Groups" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Groups" class="hide-methods failed suite-Groups"> (hide)</a> <!-- hide-methods failed suite-Groups -->
+                      <a href="#" panel-name="suite-Groups" class="show-methods failed suite-Groups"> (show)</a> <!-- show-methods failed suite-Groups -->
+                    </span>
+                    <div class="method-list-content failed suite-Groups">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Groups" title="com.sevenrmartsupermarket.tests.ManageNewsTest" class="method navigator-link" hash-for-method="verifyNewNewsInput">verifyNewNewsInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Groups" title="com.sevenrmartsupermarket.tests.LoginTest" class="method navigator-link" hash-for-method="verifyUserLogin">verifyUserLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Groups" title="com.sevenrmartsupermarket.tests.DashBoardTest" class="method navigator-link" hash-for-method="verifyUserLogout">verifyUserLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Groups -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -104,10 +128,88 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Groups" class="panel Groups">
+          <div class="suite-Groups-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sevenrmartsupermarket.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserLogin">
+                  </a> <!-- verifyUserLogin -->
+                  <span class="method-name">verifyUserLogin</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [null] but found [false]
+	at com.sevenrmartsupermarket.tests.LoginTest.verifyUserLogin(LoginTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Groups-class-failed -->
+          <div class="suite-Groups-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sevenrmartsupermarket.tests.DashBoardTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserLogout">
+                  </a> <!-- verifyUserLogout -->
+                  <span class="method-name">verifyUserLogout</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.sevenrmartsupermarket.tests.DashBoardTest.verifyUserLogout(DashBoardTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Groups-class-failed -->
+          <div class="suite-Groups-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sevenrmartsupermarket.tests.ManageNewsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewNewsInput">
+                  </a> <!-- verifyNewNewsInput -->
+                  <span class="method-name">verifyNewNewsInput</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.265)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a27a80f1c3e8a1611a7cd64bfd2996b, executeScript {script=window.scrollBy(0,0), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\nimmy\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51068/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a27a80f1c3e8a1611a7cd64bfd2996b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:480)
+	at com.sevenrmartsupermarket.utilities.PageUtility.scrollAndClick(PageUtility.java:70)
+	at com.sevenrmartsupermarket.pages.DashBoardPage.clickOnTile(DashBoardPage.java:36)
+	at com.sevenrmartsupermarket.tests.ManageNewsTest.verifyNewNewsInput(ManageNewsTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Groups-class-failed -->
         </div> <!-- panel Groups -->
         <div panel-name="test-xml-Groups" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\nimmy\eclipse-workspace\com.sevenrmartsupermarket\src\main\resources\xml-suites\groups</span>
+            <span class="header-content">C:\Users\nimmy\git\sevenmart\com.sevenrmartsupermarket\src\main\resources\xml-suites\groups.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -120,7 +222,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;smoke&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;UI Test&quot;/&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -150,6 +252,30 @@
             <span class="header-content">Groups for Groups</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserLogout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNewNewsInput</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserLogout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Groups" class="panel">
@@ -166,12 +292,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyNewNewsInput')
+data.setCell(0, 2, 'com.sevenrmartsupermarket.tests.ManageNewsTest')
+data.setCell(0, 3, 1510);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyUserLogin')
+data.setCell(1, 2, 'com.sevenrmartsupermarket.tests.LoginTest')
+data.setCell(1, 3, 1195);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyUserLogout')
+data.setCell(2, 2, 'com.sevenrmartsupermarket.tests.DashBoardTest')
+data.setCell(2, 3, 1102);
 window.suiteTableData['Groups']= { tableData: data, tableDiv: 'times-div-Groups'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Groups">
               </div> <!-- times-div-Groups -->
             </div> <!-- times-div -->
@@ -186,30 +324,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Groups" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.sevenrmartsupermarket.tests.DashBoardTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyUserLogout</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.sevenrmartsupermarket.tests.ManageNewsTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyNewNewsInput</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.sevenrmartsupermarket.tests.LoginTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyUserLogin</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Groups" class="panel">
@@ -217,6 +334,44 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowserApplication</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUserLogin</span>
+                <span class="method-start">2794 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.DashBoardTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowserApplication</span>
+                <span class="method-start">4006 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUserLogout</span>
+                <span class="method-start">5929 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sevenrmartsupermarket.tests.ManageNewsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowserApplication</span>
+                <span class="method-start">7037 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyNewNewsInput</span>
+                <span class="method-start">8460 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -3,16 +3,10 @@
 <suite thread-count="1" parallel="classes" name="Failed suite [Suite_SuperMarketTest]">
   <test thread-count="1" parallel="classes" name="Smoke Test(failed)">
     <classes>
-      <class name="com.sevenrmartsupermarket.tests.ManageNewsTest">
-        <methods>
-          <include name="launchBrowserApplication"/>
-          <include name="terminateSession"/>
-          <include name="verifyNewNewsInput"/>
-        </methods>
-      </class> <!-- com.sevenrmartsupermarket.tests.ManageNewsTest -->
       <class name="com.sevenrmartsupermarket.tests.DashBoardTest">
         <methods>
           <include name="verifyUserLogout"/>
+          <include name="launchBrowserApplication"/>
           <include name="launchBrowserApplication"/>
           <include name="terminateSession"/>
         </methods>
@@ -21,9 +15,18 @@
         <methods>
           <include name="verifyUserLogin"/>
           <include name="launchBrowserApplication"/>
+          <include name="launchBrowserApplication"/>
           <include name="terminateSession"/>
         </methods>
       </class> <!-- com.sevenrmartsupermarket.tests.LoginTest -->
+      <class name="com.sevenrmartsupermarket.tests.ManageNewsTest">
+        <methods>
+          <include name="launchBrowserApplication"/>
+          <include name="launchBrowserApplication"/>
+          <include name="verifyNewNewsInput"/>
+          <include name="terminateSession"/>
+        </methods>
+      </class> <!-- com.sevenrmartsupermarket.tests.ManageNewsTest -->
     </classes>
   </test> <!-- Smoke Test(failed) -->
   <test thread-count="1" parallel="classes" name="Regression Test(failed)">
@@ -31,6 +34,7 @@
       <class name="com.sevenrmartsupermarket.tests.DashBoardTest">
         <methods>
           <include name="verifyUserLogout"/>
+          <include name="launchBrowserApplication"/>
           <include name="launchBrowserApplication"/>
           <include name="terminateSession"/>
         </methods>
